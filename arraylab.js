@@ -197,15 +197,15 @@ const buzz = [];
 const fizzbuzz = [];
 
 for (let i = 0; i < nums.length; i++){
-const num = nums[i];
-    if (num % 3 ===0){
-        fizz.push(num);
+
+   if (nums[i] % 3 ===0 && nums[i] % 5===0){
+        fizzbuzz.push(nums[i]);
     }
-    if (num % 5 ===0){
-        buzz.push(num);
+    if (nums[i] % 3 ===0){
+        fizz.push(nums[i]);
     }
-    if (num % 3 ===0 && num % 5===0){
-        fizzbuzz.push(num);
+    if (nums[i] % 5 ===0){
+        buzz.push(nums[i]);
     }
 }
 
@@ -237,6 +237,34 @@ const numArrays = [
 const numList = numArrays[numArrays.length -1];
 
 console.log('Exercise 13 result:', numList);
+
+
+/*
+Exercise 14: Accessing within nested arrays
+
+1) Retrieve the number `66` from the `numArrays` array. As part of this process
+   do not alter the original `numArrays` array.
+
+2) Assign it to a variable called `num`.
+
+Complete Exercise 14 in the space below:
+*/
+
+let num =[]
+for(let i=0; i<numArrays.length; i++){
+   for(let j=0; j<numArrays.length; j++){
+      if(numArrays[i][j] ===66){
+         num = numArrays[i][j];
+         break;
+      }
+   }
+}
+console.log('Exercise 14 result:', num)
+
+//Or
+// const num = numArrays[2][1]
+// console.log('Exercise 14 result:', num);
+
 
 
 /*
