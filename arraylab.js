@@ -250,6 +250,7 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
+// I did this with Jacob and classmates when we were messing aroung in breakout session
 let num =[]
 for(let i=0; i<numArrays.length; i++){
    for(let j=0; j<numArrays.length; j++){
@@ -261,7 +262,7 @@ for(let i=0; i<numArrays.length; i++){
 }
 console.log('Exercise 14 result:', num)
 
-//Or
+//Or below - did this myself
 // const num = numArrays[2][1]
 // console.log('Exercise 14 result:', num);
 
