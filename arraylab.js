@@ -287,4 +287,4 @@ numArrays.forEach((nested) => {
     });
 });
 
-console.log('Exercise 15 result:\n', total);
+console.log('Exercise 15 result:', total);
